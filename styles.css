@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a2a72;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.user-form {
+    width: 100%;
+    max-width: 700px; 
+}
+
+.user-form input {
+    width: 100%;
+    display: block;
+    background-color: rgb(27, 6, 27);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    box-shadow: 10px 10px 20px rgb(41, 7, 41);
+}
+
+
+.user-form input:focus {
+    outline: none;
+}
+
+
+.user-form input::placeholder {
+    color: rgb(155, 88, 255) ;
+}
+
+
+.card {
+    max-width: 800px;
+    background-color:  rgb(27, 6, 27);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(41, 7, 41);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+
+.avatar {
+    border-radius: 50%;
+    border: 5px solid burlywood;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: white;
+    margin-left: 2rem;
+
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+}
+
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+
+.repo {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+@media (max-width : 500px){
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-form {
+        max-width: 400px;
+    }
+}
